@@ -6,12 +6,15 @@
 
 
 ### Testing Pyramid ###
+```
+| ----------------- | --------------------------------------------------------------------------|
 | UI Tests          | Automated tests to test User Interface Interaction and Behaviour.         |
 | ----------------- | --------------------------------------------------------------------------|
 | Integration Tests | App code is tested without facking database or HTTP Connections.          |
 | ----------------- | --------------------------------------------------------------------------|
 | Unit Tests        | Testing isolated small pieces of code with Fake or Mock dependencies.     |
-
+| ----------------- | --------------------------------------------------------------------------|
+```
 
 ### F.I.R.S.T. Principle ###
 1. Fast: Unit tests run fast. 
@@ -103,7 +106,6 @@ method is arranged in 3 major blocks:
 - Assert/Then: This is where the result produced by the system under the test is validated to make a decision whether this test is passing or failing.
 
 
-/*
-Unit Testing Swift Mobile App
-Refrence: https://www.udemy.com/course/unit-testing-ios-mobile-app/?couponCode=ST18MT62524
-*/
+### Refrence ###
+- [Unit Testing Swift Mobile App](https://www.udemy.com/course/unit-testing-ios-mobile-app/?couponCode=ST18MT62524)
+
