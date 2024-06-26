@@ -37,11 +37,12 @@
 
 ### Xcode Unit Test Case Class: ###
 When you create the unit test case class, it will already have some methods in it added by Xcode:  
+- `func setUpWithError()`: This method is called before the invocation of each test method in the class.
 - `func setUp()`: This method is called before the invocation of each test method in a test case class. If your test case class has 3 different methods, the setup method will be called once before each unit test method is invoked. You can use this setup method to put any code that needs to be called before each test method.
+- `func tearDownWithError()`: This method is called after the invocation of each test method in the class.
 - `func tearDown()`: This method is called after the invocation of each test method in a test case class. It provides an opportunity to perform cleanup after each test method completes.
 - `class func setUp()`: Same as `setUp()` method but class level methods will be executed one time only per each class.
 - `class func tearDown()`: Same as `tearDown()` method but class level methods will be executed one time only per each class.
-- `func tearDownWithError()`: The instance teardown with error method is called once after every test method in the test case class.
 - `addTeardownBlock`: We can also use `addTeardownBlock` to release the created resources. It is called one time only after the test method that defines it is run and it is called before the `tearDownWithError()` method is called.
 - `func testExample()`: This method is usually an example of a test method.
 - `func testPerformanceExample()`: You have an example of a performance test, which is also empty and doesn't do anything to get some value out of it. You will need to update it with additional code.
