@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignUpFormValidator {
+struct SignUpFormValidator {
     
     func isValidFirstName(_ name: String) -> Bool {
         var result = true
@@ -68,4 +68,5 @@ struct SignUpConstants {
     static let lastNameMaximumLenght: Int = 20
     static let passwordMinimumLenght: Int = 8
     static let passwordMaximumLenght: Int = 20
+    static let signUpURLString: String = "http://localhost:3001/users/mockSignUp"
 }
