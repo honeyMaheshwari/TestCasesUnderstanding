@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignUpFormValidator {
+struct SignUpInputDataValidator: SignUpInputDataValidatorProtocol {
     
     func isValidFirstName(_ name: String) -> Bool {
         var result = true

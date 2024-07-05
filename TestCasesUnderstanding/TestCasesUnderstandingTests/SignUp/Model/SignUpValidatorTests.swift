@@ -10,11 +10,11 @@ import XCTest
 
 final class SignUpValidatorTests: XCTestCase {
 
-    var sutSignUpValidator: SignUpFormValidator!
+    var sutSignUpValidator: SignUpInputDataValidator!
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sutSignUpValidator = SignUpFormValidator()
+        sutSignUpValidator = SignUpInputDataValidator()
     }
 
     override func tearDownWithError() throws {
