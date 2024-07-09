@@ -36,7 +36,7 @@ final class SignUpViewControllerTests: XCTestCase {
         let lastNameTextField = try XCTUnwrap(sutSignUpViewController.lastNameTextField, "The lastNameTextField is not connected to an IBOutlet and found nil.")
         let emailTextField = try XCTUnwrap(sutSignUpViewController.emailTextField, "The emailTextField is not connected to an IBOutlet and found nil.")
         let passwordTextField = try XCTUnwrap(sutSignUpViewController.passwordTextField, "The passwordTextField is not connected to an IBOutlet and found nil.")
-        let confirmPasswordTextField = try XCTUnwrap(sutSignUpViewController.confirmPasswordTextField, "The firstNameTextField is not connected to an IBOutlet and found nil.")
+        let confirmPasswordTextField = try XCTUnwrap(sutSignUpViewController.confirmPasswordTextField, "The confirmPasswordTextField is not connected to an IBOutlet and found nil.")
         
         // Act: in setUp() method
         // Assert:
@@ -77,5 +77,21 @@ final class SignUpViewControllerTests: XCTestCase {
         // Assert
         XCTAssertTrue(mockSignUpPresenter.isProcessUserSignUpMethodCalled, "The processUserSignUp() method was not called on SignUpPresenter when the sign-up button is tapped in SignUpViewController")
     }
-
+    
+    func testSignUpViewControllerEmailTextField_whenCreated_hasCorrectInputTrailsSet() throws {
+        let emailTextField = try XCTUnwrap(sutSignUpViewController.emailTextField, "The emailTextField is not connected to an IBOutlet and found nil.")
+        XCTAssertEqual(emailTextField.textContentType, UITextContentType.emailAddress, "Email address text field does not have UITextContentType set to emailAddress")
+        XCTAssertEqual(emailTextField.keyboardType, UIKeyboardType.emailAddress, "Email address text field does not have UIKeyboardType set to emailAddress")
+    }
+    
+    func testSignUpViewControllerPasswordTextField_whenCreated_hasCorrectInputTrailsSet() throws {
+        let passwordTextField = try XCTUnwrap(sutSignUpViewController.passwordTextField, "The passwordTextField is not connected to an IBOutlet and found nil.")
+        XCTAssertTrue(passwordTextField.isSecureTextEntry, "Password text field is not a secured text entery field")
+    }
+    
+    func testSignUpViewControllerConfirmPasswordTextField_whenCreated_hasCorrectInputTrailsSet() throws {
+        let confirmPasswordTextField = try XCTUnwrap(sutSignUpViewController.confirmPasswordTextField, "The confirmPasswordTextField is not connected to an IBOutlet and found nil.")
+        XCTAssertTrue(confirmPasswordTextField.isSecureTextEntry, "Confirm Password text field is not a secured text entery field")
+    }
+    
 }
