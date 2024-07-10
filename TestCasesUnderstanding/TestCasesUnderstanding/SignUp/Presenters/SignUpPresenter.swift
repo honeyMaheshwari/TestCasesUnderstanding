@@ -22,22 +22,27 @@ class SignUpPresenter: SignUpPresenterProtocol {
     func processUserSignUp(with form: SignUpFormModel) {
         
         if !validator.isValidFirstName(form.firstName) {
+            delegate?.errorHandler(error: .invalidFirstName)
             return
         }
         
         if !validator.isValidLastName(form.lastName) {
+            delegate?.errorHandler(error: .invalidLastName)
             return
         }
         
         if !validator.isValidEmail(form.email) {
+            delegate?.errorHandler(error: .invalidEmail)
             return
         }
         
         if !validator.isValidPassword(form.password) {
+            delegate?.errorHandler(error: .invalidPassword)
             return
         }
         
         if !validator.doesPasswordMatch(password: form.password, confirmPassword: form.confirmPassword) {
+            delegate?.errorHandler(error: .invalidConfirmPassword)
             return
         }
         

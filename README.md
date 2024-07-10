@@ -107,6 +107,15 @@ method is arranged in 3 major blocks:
 - Assert/Then: This is where the result produced by the system under the test is validated to make a decision whether this test is passing or failing.
 
 
+### UI Tests ###
+- Most likely, we write UI tests after writing Unit Tests and Integration Tests.
+- The Unit test has access to application functionality from inside. It has access to a business logic inside of a function to input parameters and to the returned value. The user interface test does not have any direct access to functions to input parameters and does not validate a returned value of a specific function.
+- User Interface test helps us to test app functionality from outside as if a user is holding the app in their hands and is trying to use the user app by typing text into text fields, tapping on buttons, navigating from page to page and opening and closing images.
+- UI testing framework allows us to write code to interact with UI elements on behalf of a user.
+- UI Test helps us to test the entire flow.
+- Unit test is focused on testing a single function in isolation. UI test allows us to test the entire flow of features.
+
+
 ### Refrence ###
 - [Unit Testing Swift Mobile App](https://www.udemy.com/course/unit-testing-ios-mobile-app/?couponCode=ST18MT62524)
 

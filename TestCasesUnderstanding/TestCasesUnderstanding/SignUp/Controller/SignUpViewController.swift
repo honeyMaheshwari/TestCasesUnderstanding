@@ -43,11 +43,18 @@ class SignUpViewController: UIViewController {
 extension SignUpViewController: SignUpViewDelegateProtocol {
     
     func successFullSignUp() {
-        // TODO:
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "segueSignUpToDashboard", sender: nil)
+        }
     }
     
     func errorHandler(error: SignUpError) {
-        // TODO: 
+        let alertController = UIAlertController(title: "Error", message: error.errorDescription, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+        DispatchQueue.main.async {
+            alertController.view.accessibilityIdentifier = "errorAlertController"
+            self.present(alertController, animated: true)
+        }
     }
     
 }

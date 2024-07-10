@@ -23,6 +23,8 @@
 		2068CEF42C2BB0DD00926BCA /* TestCasesUnderstandingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068CEF32C2BB0DD00926BCA /* TestCasesUnderstandingTests.swift */; };
 		2068CEFE2C2BB0DD00926BCA /* TestCasesUnderstandingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068CEFD2C2BB0DD00926BCA /* TestCasesUnderstandingUITests.swift */; };
 		2068CF002C2BB0DD00926BCA /* TestCasesUnderstandingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2068CEFF2C2BB0DD00926BCA /* TestCasesUnderstandingUITestsLaunchTests.swift */; };
+		20C931352C3E9DC300C04F3B /* LoginViewControllerFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C931342C3E9DC300C04F3B /* LoginViewControllerFlowUITests.swift */; };
+		20C931382C3EA6A900C04F3B /* SignUpViewControllerFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C931372C3EA6A900C04F3B /* SignUpViewControllerFlowUITests.swift */; };
 		20D9FB0E2C37E80D009208E4 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9FB0D2C37E80D009208E4 /* SignUpPresenterTests.swift */; };
 		20D9FB102C37E952009208E4 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9FB0F2C37E952009208E4 /* SignUpFormModel.swift */; };
 		20D9FB122C37EA04009208E4 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9FB112C37EA04009208E4 /* SignUpPresenter.swift */; };
@@ -80,6 +82,8 @@
 		2068CEF92C2BB0DD00926BCA /* TestCasesUnderstandingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCasesUnderstandingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2068CEFD2C2BB0DD00926BCA /* TestCasesUnderstandingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCasesUnderstandingUITests.swift; sourceTree = "<group>"; };
 		2068CEFF2C2BB0DD00926BCA /* TestCasesUnderstandingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCasesUnderstandingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20C931342C3E9DC300C04F3B /* LoginViewControllerFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerFlowUITests.swift; sourceTree = "<group>"; };
+		20C931372C3EA6A900C04F3B /* SignUpViewControllerFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerFlowUITests.swift; sourceTree = "<group>"; };
 		20D9FB0D2C37E80D009208E4 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		20D9FB0F2C37E952009208E4 /* SignUpFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModel.swift; sourceTree = "<group>"; };
 		20D9FB112C37EA04009208E4 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 		2068CEFC2C2BB0DD00926BCA /* TestCasesUnderstandingUITests */ = {
 			isa = PBXGroup;
 			children = (
+				20C931362C3EA68B00C04F3B /* SignUp */,
+				20C931332C3E9D6800C04F3B /* Login */,
 				2068CEFD2C2BB0DD00926BCA /* TestCasesUnderstandingUITests.swift */,
 				2068CEFF2C2BB0DD00926BCA /* TestCasesUnderstandingUITestsLaunchTests.swift */,
 			);
@@ -245,6 +251,22 @@
 				20D9FB162C37ECB1009208E4 /* Protocols */,
 				20E833F72C2EB7FE00812BCD /* Network */,
 				20E833F62C2EB79200812BCD /* Model */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		20C931332C3E9D6800C04F3B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				20C931342C3E9DC300C04F3B /* LoginViewControllerFlowUITests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		20C931362C3EA68B00C04F3B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				20C931372C3EA6A900C04F3B /* SignUpViewControllerFlowUITests.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -510,6 +532,8 @@
 			files = (
 				2068CEFE2C2BB0DD00926BCA /* TestCasesUnderstandingUITests.swift in Sources */,
 				2068CF002C2BB0DD00926BCA /* TestCasesUnderstandingUITestsLaunchTests.swift in Sources */,
+				20C931382C3EA6A900C04F3B /* SignUpViewControllerFlowUITests.swift in Sources */,
+				20C931352C3E9DC300C04F3B /* LoginViewControllerFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
