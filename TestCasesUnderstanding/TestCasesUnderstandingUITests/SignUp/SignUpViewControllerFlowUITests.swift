@@ -110,6 +110,33 @@ final class SignUpViewControllerFlowUITests: XCTestCase {
         // Act
         signUpButton.tap()
         
+        // Take screenshot of single emlement
+        /*
+        let emailTextFieldScreenShot = emailTextField.screenshot()
+        let emailTextFieldAttachment = XCTAttachment(screenshot: emailTextFieldScreenShot)
+        emailTextFieldAttachment.name = "ScreenShot of SignUp Email Text Field"
+        emailTextFieldAttachment.lifetime = .deleteOnSuccess // or we can use .keepAlways
+        add(emailTextFieldAttachment)
+        */
+        
+        // Take screenshot of full screen - using XCUIApplication object
+        /*
+        let currentAppWindowScreenShot = app.screenshot()
+        let currentAppWindowAttachment = XCTAttachment(screenshot: currentAppWindowScreenShot)
+         currentAppWindowAttachment.name = "ScreenShot of SignUp View Controller"
+         currentAppWindowAttachment.lifetime = .deleteOnSuccess
+         add(currentAppWindowAttachment)
+         */
+        
+        // Take screenshot of full screen - using XCUIScreen object
+        /*
+        let currentAppWindowUIScreen = XCUIScreen.main.screenshot()
+        let currentAppWindowAttachment = XCTAttachment(screenshot: currentAppWindowUIScreen)
+        currentAppWindowAttachment.name = "ScreenShot of SignUp View Controller"
+        currentAppWindowAttachment.lifetime = .deleteOnSuccess
+        add(currentAppWindowAttachment)
+         */
+        
         // Assert
         XCTAssertTrue(app.otherElements["dashboardViewController"].waitForExistence(timeout: 5), "The user has not been navigated to Dashboard when tapped on SignUp button.")
     }
