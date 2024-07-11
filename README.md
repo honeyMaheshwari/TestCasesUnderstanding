@@ -122,6 +122,11 @@ method is arranged in 3 major blocks:
 - Launch Environment is a dictionary:- [String: String]
 
 
+### Test Plan ###
+- Test plans allow us to run unit tests and tests with different configurations multiple times and it is very convenient and is very quick.
+- An Xcode test plan provides a way to run a selections of tests with various test configurations. The test plan is a JSON file with the .xctestplan extension that you add to your Xcode project and reference from a scheme.
+
+
 ### Refrence ###
 - [Unit Testing Swift Mobile App](https://www.udemy.com/course/unit-testing-ios-mobile-app/?couponCode=ST18MT62524)
 
