@@ -116,6 +116,12 @@ method is arranged in 3 major blocks:
 - Unit test is focused on testing a single function in isolation. UI test allows us to test the entire flow of features.
 
 
+### Launch Arguments and Environment ###
+- There are some times in which we need to pass some information to our application not by typing it into the text field or text view. Like setting a server other than the actual production server or enabling/disabling features(advertising). To achieve this we can send information using a command line argument or an environment property.
+- Launch Arguments is an array of String:- [String]
+- Launch Environment is a dictionary:- [String: String]
+
+
 ### Refrence ###
 - [Unit Testing Swift Mobile App](https://www.udemy.com/course/unit-testing-ios-mobile-app/?couponCode=ST18MT62524)
 

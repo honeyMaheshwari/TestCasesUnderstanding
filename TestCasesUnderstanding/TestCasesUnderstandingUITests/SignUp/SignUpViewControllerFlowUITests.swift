@@ -23,6 +23,8 @@ final class SignUpViewControllerFlowUITests: XCTestCase {
         try super.setUpWithError()
         
         app = XCUIApplication()
+        app.launchArguments = ["-skipSurvey", "-debugServer"]
+        app.launchEnvironment = ["signUpURL": "http://yourDummyServerURL", "inAppPurchaseEnable": "enable"]
         app.launch()
         
         // move to SignUp View Controller

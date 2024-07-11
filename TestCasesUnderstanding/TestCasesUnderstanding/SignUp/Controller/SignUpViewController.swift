@@ -21,7 +21,23 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        #if DEBUG
+            if CommandLine.arguments.contains("-skipSurvey") {
+                print("Skip Survey")
+            }
+            
+            // To get the value of launch argument we can use both CommandLine or ProcessInfo
+        
+            let processInfo = ProcessInfo.processInfo
+            if processInfo.arguments.contains("-skipSurvey") {
+                print("Skip Survey")
+            }
+
+            if let signUpURL = processInfo.environment["signUpURL"] {
+                print("processInfo.environment signUpURL -> \(signUpURL)")
+            }
+        #endif
+        
         checkIfPresenterIsNilThenUpdateItsValue()
     }
     
